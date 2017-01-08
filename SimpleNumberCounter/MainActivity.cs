@@ -4,7 +4,7 @@ using Android.Widget;
 
 namespace SimpleNumberCounter
 {
-    [Activity(Label = "SimpleNumberCounter", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "Simple Number Counter", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
         private int _count;
