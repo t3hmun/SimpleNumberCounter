@@ -1,17 +1,13 @@
-﻿using System;
-using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
+﻿using Android.App;
 using Android.OS;
+using Android.Widget;
 
 namespace SimpleNumberCounter
 {
     [Activity(Label = "SimpleNumberCounter", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-        int count = 1;
+        private int _count;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -20,12 +16,24 @@ namespace SimpleNumberCounter
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            // Get our button from the layout resource,
-            // and attach an event to it
-            //Button button = FindViewById<Button>(Resource.Id.MyButton);
+            var plusOneButton = FindViewById<Button>(Resource.Id.Plus1Button);
+            var minusOneButton = FindViewById<Button>(Resource.Id.Minus1Button);
+            var plusFiveButton = FindViewById<Button>(Resource.Id.Plus5Button);
+            var minusFiveButton = FindViewById<Button>(Resource.Id.Minus5Button);
+            var resetButton = FindViewById<Button>(Resource.Id.ResetButton);
+            var counterText = FindViewById<TextView>(Resource.Id.CountText);
 
-            //button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            plusOneButton.Click += (sender, e) => { ChangeCount(1, counterText); };
+            minusOneButton.Click += (sender, e) => { ChangeCount(-1, counterText); };
+            plusFiveButton.Click += (sender, e) => { ChangeCount(5, counterText); };
+            minusFiveButton.Click += (sender, e) => { ChangeCount(-5, counterText); };
+            resetButton.Click += (sender, args) => { ChangeCount(-_count, counterText); };
+        }
+
+        private void ChangeCount(int amount, TextView counter)
+        {
+            _count += amount;
+            counter.Text = _count.ToString();
         }
     }
 }
-

@@ -3,7 +3,7 @@
 <resources>
   <string name="Plus1">+1</string>
   <string name="Minus1">-1</string>
-  <string name="Plus5">+1</string>
+  <string name="Plus5">+5</string>
   <string name="Minus5">-5</string>
   <string name="Reset">Reset</string>
   <string name="ApplicationName">Simple Number Counter</string>
