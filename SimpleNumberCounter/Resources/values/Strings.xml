@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
-    <string name="Hello">Hello World, Click Me!</string>
-    <string name="ApplicationName">SimpleNumberCounter</string>
+  <string name="Plus1">+1</string>
+  <string name="Minus1">-1</string>
+  <string name="Plus5">+1</string>
+  <string name="Minus5">-5</string>
+  <string name="Reset">Reset</string>
+  <string name="ApplicationName">Simple Number Counter</string>
 </resources>
