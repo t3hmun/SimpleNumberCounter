@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--default-->
+<resources>
+  <dimen name="text_feature">50dp</dimen>
+  <dimen name="text_large">25dp</dimen>
+  <dimen name="text_small">15dp</dimen>
+  <dimen name="textbox_height_small">40dp</dimen>
+</resources>

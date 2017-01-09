@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-
+<!--default-->
 <resources>
   <string name="Plus1">+1</string>
   <string name="Minus1">-1</string>
   <string name="Plus5">+5</string>
   <string name="Minus5">-5</string>
   <string name="Reset">Reset</string>
+  <string name="Num">0</string>
   <string name="ApplicationName">Simple Number Counter</string>
 </resources>
